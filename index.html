@@ -3,9 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="/css/styless.css" />
   </head>
   <body>
-    <h1>Coba aja dulu</h1>
+    <header>
+      <h1>KALKULATOR BMI</h1>
+    </header>
+    <main>
+      <article>
+        <h3>Kalkulator BMI</h3>
+        <p>
+          Berat badan ideal adalah impian semua orang. Tidak hanya memiliki
+          bentuk tubuh yang menunjang penampilan, berat badan ideal juga
+          menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung
+          sekarang di BMI Kalkulator.
+        </p>
+      </article>
+
+      <!-- Tampilan Form -->
+      <section>
+        <!-- Form Jenis Kelamin -->
+        <form>
+          <div class="Jenis-Kelamin-S">
+            <h3>Jenis Kelamin</h3>
+            <div class="Jenis-Kelamin">
+              <div>
+                <img src="/img/Man.jpg" alt="Laki-laki" width="100px" />
+                <input type="radio" id="selection-man" name="gender" />
+                <label for="selection-man"> Laki-laki </label>
+              </div>
+              <div>
+                <img src="/img/Man.jpg" alt="Perempuan" />
+                <input type="radio" id="selection-woman" name="gender" />
+                <label for="selection-woman"> Perempuan </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Inputan -->
+          <div class="inputan">
+            <div>
+              <label for="weight">Berat (kg)</label>
+              <input type="number" id="weight" />
+            </div>
+            <div>
+              <label for="height">Tinggi (cm)</label>
+              <input type="number" id="height" />
+            </div>
+            <div>
+              <label for="age">Umur</label>
+              <input type="number" id="age" />
+            </div>
+
+            <!-- Tombol Submit dan Reset -->
+            <div>
+              <button>Submit BMI</button>
+              <button>Reset</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="Result">
+          <h2>Result</h2>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
