@@ -93,17 +93,22 @@ button {
   text-align: center;
 }
 
-#bmi-value {
-  text-align: center;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #3876d2;
-  margin-right: 50px;
-  margin-left: 50px;
-}
-
 #bmi-suggestion {
   text-align: center;
   padding: 10px;
   font-size: 20px;
+}
+#bmi-value {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.bmi {
+  background-color: #3876d2;
+  border-radius: 12px;
+  padding: 12px;
+  color: white;
 }

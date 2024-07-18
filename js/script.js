@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const bmi = (weight / (height * height)).toFixed(1);
 
-    bmiValueText.innerHTML = `BMI Anda:<br>${bmi}`;
+    bmiValueText.innerHTML = `MBI Anda:<br><p class="bmi">${bmi}</p>`;
 
     // Memberikan gaya pada teks hasil BMI
     bmiValueText.style.color = "#333"; // Contoh: mengubah warna teks menjadi hitam
