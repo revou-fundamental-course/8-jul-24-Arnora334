@@ -46,11 +46,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Event listener untuk tombol Reset
-  const resetButton = form.querySelector('button[type="reset"]');
+  const resetButton = form.querySelector(".reset");
+  console.log(resetButton);
   resetButton.addEventListener("click", function () {
-    form.reset();
-    bmiValueText.textContent = "";
-    bmiSuggestionText.textContent = "";
+    document.getElementById("weight").value = "";
+    document.getElementById("height").value = "";
+    document.getElementById("age").value = "";
     resultDiv.style.display = "none";
   });
 });
